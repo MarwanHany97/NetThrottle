@@ -20,14 +20,6 @@ Under the hood it uses [WinDivert](https://reqrypt.org/windivert.html) to interc
 
 When you throttle a TCP connection by dropping packets, TCP congestion control kicks in and naturally slows down. Its not byte-accurate but it works surprisingly well in practice.
 
-## Building
-
-You need:
-- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (the SDK, not just the runtime)
-- [WinDivert 2.2](https://reqrypt.org/windivert.html)
-
-**Run as administrator** — WinDivert needs admin to install its kernel driver.
-
 ## Usage
 
 1. Open publish -> open NetThrottle.exe
