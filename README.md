@@ -52,7 +52,7 @@ Check the **Adaptive** box on any row and the app will dynamically adjust the ac
 
 Built with [WinDivert](https://reqrypt.org/windivert.html) by basil00 — does all the heavy lifting of actually capturing and reinjecting packets.
 
-AI was used extensively in the making of thin program (So if you have technical questions keep that in mind i am not an expert i just needed a FOSS alternative)
+AI was used extensively in the making of this program (So if you have technical questions keep that in mind i am not an expert i just needed a FOSS alternative)
 
 ## License
 
