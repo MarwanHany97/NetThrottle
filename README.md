@@ -26,23 +26,16 @@ You need:
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (the SDK, not just the runtime)
 - [WinDivert 2.2](https://reqrypt.org/windivert.html)
 
-```
-git clone https://github.com/yourname/NetThrottle.git
-cd NetThrottle
-dotnet publish -c Release -r win-x64 --self-contained -o ./publish
-```
-
-Then grab `WinDivert.dll` and `WinDivert64.sys` from the WinDivert download (inside the `x64` folder) and drop them into the `publish` folder next to the exe.
-
 **Run as administrator** — WinDivert needs admin to install its kernel driver.
 
 ## Usage
 
-1. Hit **Start** to begin intercepting
-2. Check the boxes and type in speeds for whatever you want to limit
-3. Click the **▶** arrow on grouped processes to expand individual PIDs
-4. The **GLOBAL** row at the top caps total bandwidth for everything
-5. Close the window while the interceptor is running and it goes to the system tray — double click to reopen, right click > Exit to fully quit
+1. Open publish -> open NetThrottle.exe
+2. Hit **Start** to begin intercepting
+3. Check the boxes and type in speeds for whatever you want to limit
+4. Click the **▶** arrow on grouped processes to expand individual PIDs
+5. The **GLOBAL** row at the top caps total bandwidth for everything
+6. Close the window while the interceptor is running and it goes to the system tray — double click to reopen, right click > Exit to fully quit
 
 ### Adaptive Mode
 Check the **Adaptive** box on any row and the app will dynamically adjust the actual throttle rate to make the 5-second rolling average match your target. Without it, the token bucket allows bursts that can push the average above your limit. With it, the app continuously tightens/loosens the rate until the average converges. Takes a few seconds to settle.
@@ -58,6 +51,8 @@ Check the **Adaptive** box on any row and the app will dynamically adjust the ac
 ## Credits
 
 Built with [WinDivert](https://reqrypt.org/windivert.html) by basil00 — does all the heavy lifting of actually capturing and reinjecting packets.
+
+AI was used extensively in the making of thin program (So if you have technical questions keep that in mind i am not an expert i just needed a FOSS alternative)
 
 ## License
 
