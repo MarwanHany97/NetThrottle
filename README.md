@@ -1,5 +1,7 @@
 # NetThrottle
 
+![NetThrottle](/ExampleImage.png)
+
 A simple network throttler for Windows. Think NetLimiter but just the parts you actually use — limit download/upload speed per process or block traffic entirely.
 
 ![Windows](https://img.shields.io/badge/platform-Windows%2010%2F11-blue)
